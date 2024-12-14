@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+
+<head>
+	<link rel="stylesheet" href="Main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> // timer // </title>
+</head>
+
+<body>
+	<div class="container">
+		<section class="section-0">
+			<div>
+				<table border="1" class="tableSolvesStats">
+					<thead>
+						<tr>
+							<th> type </th>
+							<th> curr </th>
+							<th> best </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th> single </th>
+							<th id="thSingleCurr"> - </th>
+							<th id="thSingleBest"> - </th>
+						</tr>
+						<tr>
+							<th> ao5 </th>
+							<th id="thAo5Curr"> - </th>
+							<th id="thAo5Best"> - </th>
+						</tr>	
+						<tr>
+							<th> ao12 </th>
+							<th> - </th>
+							<th> - </th>
+						</tr>	
+						<tr>
+							<th> ao50 </th>
+							<th> - </th>
+							<th> - </th>
+						</tr>	
+						<tr>
+							<th> avg </th>
+							<th id="thAvgCurr"> - </th>
+							<th id="thAvgBest"> - </th>
+						</tr>																								
+					</tbody>
+				</table>
+			</div>
+			<div>	
+				<table border="0" class="tableSolvesList" id="tableSolvesList">
+					<thead>
+						<tr>
+							<th> # </th>
+							<th> time </th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+		</section>
+
+		<section class="section-1">
+			<div class="divScramble">
+				<span class="spanScramble" id="spanScramble"></span>
+				<div>
+					<button class="buttonScrambleReset" id="buttonScramblePrevious"> << </button>
+					<button class="buttonScrambleReset" id="buttonScrambleNext"> >> </button>
+				</div>
+			</div>			
+		</section>
+
+		<section class="section-2">
+			<div class="divTimer">
+				<input class="inputTimer" id="inputTimer" type="text"></input>
+			</div>
+		</section>		
+
+		<section class="section-3">
+			<div>
+				<button class="buttonSettingsOpen" id="buttonSettingsOpen"> ⚙ </button>
+			</div>
+		</section>
+
+		<section class="section-4" id="section-4">
+			<div class="divSettings" id="divSettings">
+				<div class="divSettingsBackground" id="divSettingsBackground">
+					<span> h </span>					
+				</div>	
+				<div class="divSettingsBody" id="divSettingsBody">
+					<span> scramble </span>	
+				</div>
+			</div>
+		</section>		
+	</div>
+</body>
+
+<script src="main.js"></script>
+
+</html>

@@ -1,0 +1,132 @@
+:root {
+	color-scheme: dark;
+}
+body {
+	margin: 0;
+	overflow: hidden;
+	width: 100vw;
+}
+
+.container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr 6fr;
+	grid-template-rows: 1fr 8fr;
+	width: 100vw;
+}
+.section-0 {
+	background-color: rgb(0, 0, 0);
+	grid-row: span 2;
+}
+.section-1 {
+	background-color: rgb(0, 0, 0);
+}
+.section-2 {
+	background-color: rgb(0, 0, 0);
+}
+.section-3 {
+	bottom: 0;
+	position: fixed;
+	right: 0;
+}
+.section-4 {
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;	
+	top: 0;	
+	width: 100%;
+	z-index: 1;
+}
+
+h1, h2, h3, table, .spanScramble, .buttonSettingsOpen, .spanScrambleReset {
+	color: white;
+	font-family: Roboto;
+}
+table {
+	border-collapse: collapse;
+	display: block;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+table::-webkit-scrollbar {
+	display: none;
+}
+th, td {
+	background-color: black;
+	padding: 6px;
+	text-align: center;
+	width: 100%;	
+}
+td:hover {
+	background-color: white;
+	color: black;
+}
+
+.tableSolvesStats, .tableSolvesList {
+	font-size: 1.25rem;
+}
+.tableSolvesStats {
+	height: 20%;
+	overflow: hidden;
+}	
+.tableSolvesList {
+	height: 80%;
+}
+.tableSolvesList th {
+	position: sticky;
+	top: 0;
+}
+
+.divScramble {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.spanScramble {
+	font-size: 4rem;
+    flex: 1;
+    text-align: center;
+}
+.buttonScrambleReset {
+	font-size: 3rem;
+	margin-right: 1rem;
+}
+
+.divTimer {
+	display: grid;
+	height: 100%;	
+	place-items: center;
+}
+.inputTimer {
+	font-size: 9rem;
+	text-align: center;
+	width: 40rem;
+}
+
+.buttonSettingsOpen {
+	background-color: transparent;
+	border: none;
+	font-size: 5rem;
+	padding: 0;
+}
+.buttonSettingsOpen:active {
+	color: gray;
+}
+
+.divSettings {
+	height: 100%;
+}
+.divSettingsBackground {
+	background-color: rgba(0, 0, 0, 0.75);
+	height: 100%;
+}
+.divSettingsBody {
+	background-color: red;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 80%;
+	width: 60%;
+}
