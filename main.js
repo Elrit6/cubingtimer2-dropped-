@@ -276,12 +276,7 @@ class Settings {
 		);
 	}
 
-	open() {
-		if (this.sectionSettings.style.display === "none") {
-			this.sectionSettings.style.display = "block";
-		} else {
-			this.sectionSettings.style.display = "none";
-		}		
+	open() {		
 	}
 }
 
